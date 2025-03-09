@@ -22,8 +22,8 @@ ExternalProject_Add(mpv
         spirv-cross
         vapoursynth
         libsdl2
-    GIT_REPOSITORY https://github.com/mpv-player/mpv.git
-    # GIT_TAG v0.39.0
+    GIT_REPOSITORY https://github.com/ZXEducation/mpv.git
+    GIT_TAG cartrack_39
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""
