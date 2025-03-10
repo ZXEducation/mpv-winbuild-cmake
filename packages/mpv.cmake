@@ -23,7 +23,7 @@ ExternalProject_Add(mpv
         vapoursynth
         libsdl2
     GIT_REPOSITORY https://github.com/ZXEducation/mpv.git
-    GIT_TAG cartrack
+    GIT_TAG dev
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""
