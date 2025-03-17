@@ -4,11 +4,11 @@ ExternalProject_Add(fontconfig
         freetype2
         zlib
         libiconv
-    GIT_REPOSITORY https://github.com/centricular/fontconfig.git
+    GIT_REPOSITORY https://chromium.googlesource.com/external/fontconfig
     SOURCE_DIR ${SOURCE_LOCATION}
     UPDATE_COMMAND ""
     GIT_REMOTE_NAME origin
-    GIT_TAG meson
+    GIT_TAG main
     GIT_CLONE_FLAGS "--filter=tree:0"
     PATCH_COMMAND ${EXEC} git am --3way ${CMAKE_CURRENT_SOURCE_DIR}/fontconfig-*.patch
     CONFIGURE_COMMAND ${EXEC} CONF=1 meson setup <BINARY_DIR> <SOURCE_DIR>
