@@ -50,8 +50,8 @@ ExternalProject_Add(mpv
         -Drubberband=enabled
         -Dlcms2=enabled
         -Dopenal=enabled
-        -Dspirv-cross=enabled
-        -Dvulkan=enabled
+        -Dspirv-cross=disabled
+        -Dvulkan=disabled
         -Dvapoursynth=enabled
         ${mpv_gl}
         -Dc_args='-Wno-error=int-conversion'
