@@ -47,8 +47,8 @@ ExternalProject_Add(mpv
         -Dlibbluray=disabled
         -Ddvdnav=disabled
         -Duchardet=disabled
-        -Drubberband=enabled
-        -Dlcms2=enabled
+        -Drubberband=disabled
+        -Dlcms2=disabled
         -Dopenal=disabled
         -Dspirv-cross=disabled
         -Dvulkan=disabled
