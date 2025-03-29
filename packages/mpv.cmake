@@ -40,19 +40,19 @@ ExternalProject_Add(mpv
         ${mpv_lto_mode}
         -Dlibmpv=true
         -Dpdf-build=enabled
-        -Dlua=enabled
-        -Djavascript=enabled
+        -Dlua=disabled
+        -Djavascript=disabled
         -Dsdl2=enabled
-        -Dlibarchive=enabled
-        -Dlibbluray=enabled
-        -Ddvdnav=enabled
-        -Duchardet=enabled
+        -Dlibarchive=disabled
+        -Dlibbluray=disabled
+        -Ddvdnav=disabled
+        -Duchardet=disabled
         -Drubberband=enabled
         -Dlcms2=enabled
-        -Dopenal=enabled
+        -Dopenal=disabled
         -Dspirv-cross=disabled
         -Dvulkan=disabled
-        -Dvapoursynth=enabled
+        -Dvapoursynth=disabled
         ${mpv_gl}
         -Dc_args='-Wno-error=int-conversion'
     BUILD_COMMAND ${EXEC} LTO_JOB=1 PDB=1 ninja -C <BINARY_DIR>
